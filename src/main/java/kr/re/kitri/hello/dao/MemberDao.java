@@ -19,11 +19,11 @@ public class MemberDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public void updatePoint(String memberId) {
+    public void updatePoint(int memberSeq) {
         String query =
                 "update member set point = point + 10\n" +
                         "where member_seq = ?;";
-        jdbcTemplate.update(query, memberId);
+        jdbcTemplate.update(query, memberSeq);
     }
 
     public void insertMember(Member member) {
@@ -33,5 +33,7 @@ public class MemberDao {
 
         jdbcTemplate.update(query, member.getUserId(), member.getPassword(), member.getEmail());
     }
+
+
 
 }

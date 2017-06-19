@@ -4,15 +4,14 @@ import kr.re.kitri.hello.dao.MemberDao;
 import kr.re.kitri.hello.dao.PostDao;
 import kr.re.kitri.hello.model.Post;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by danawacomputer on 2017-06-16.
  */
+
+@Service
 public class PostService {
-
-
-    @Autowired
-    private MemberDao memberDao;
 
     @Autowired
     private PostDao postDao;

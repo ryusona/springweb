@@ -36,7 +36,7 @@
             </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit"
-                onclick="location.href='/bbs/'"> Sign in </button>
+                onclick="location.href='/member/view_all'"> Sign in </button>
         <button class="btn btn-lg btn-primary btn-block" type="submit"
                 onclick="location.href='/member/write/'"> 회원가입 </button>
     </form>

@@ -1,6 +1,5 @@
 package kr.re.kitri.hello.model;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -8,18 +7,18 @@ import java.util.Date;
  */
 public class Post {
 
-    private int post_seq;
+    private int postSeq;
     private String title;
     private String post_content;
     private Date write_date;
     private int member_seq;
 
-    public int getPost_seq() {
-        return post_seq;
+    public int getPostSeq() {
+        return postSeq;
     }
 
-    public void setPost_seq(int post_seq) {
-        this.post_seq = post_seq;
+    public void setPostSeq(int postSeq) {
+        this.postSeq = postSeq;
     }
 
     public String getTitle() {
@@ -57,7 +56,7 @@ public class Post {
     @Override
     public String toString() {
         return "Post{" +
-                "post_seq=" + post_seq +
+                "postSeq=" + postSeq +
                 ", title='" + title + '\'' +
                 ", post_content='" + post_content + '\'' +
                 ", write_date=" + write_date +
